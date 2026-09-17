@@ -13,7 +13,7 @@ O projeto será desenvolvido de forma colaborativa utilizando:
 - Branches;
 - Pull Requests;
 - Merge;
-- README.
+- README.git 
 
 Cada equipe será formada por **3 integrantes**.
 
