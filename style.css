@@ -1,3 +1,16 @@
+/* --- CONFIGURAÇÕES GERAIS E RESETS --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: #050507;
+  color: #ffffff;
+  overflow-x: hidden;
+}
 
 /* --- HEADER / CABEÇALHO FUTURISTA --- */
 .header {
@@ -6,7 +19,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05); /* Linha fina minimalista */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(12px);
   position: sticky;
   top: 0;
@@ -24,7 +37,7 @@
 }
 
 .logo span {
-  color: #00f2fe; /* Ponto de luz sutil da Inovex */
+  color: #00f2fe;
 }
 
 .nav-links {
@@ -64,3 +77,93 @@
   border-color: #ffffff;
 }
 
+/* --- BANNER DO PRODUTO (CENTRALIZADO) --- */
+.hero-banner {
+  width: 100%;
+  min-height: calc(100vh - 85px); 
+  display: flex;
+  justify-content: center;        /* Centraliza na horizontal */
+  align-items: center;            /* Centraliza na vertical */
+  text-align: center;             /* Centraliza as linhas de texto */
+  padding: 40px 5%;
+  background: radial-gradient(circle at center, #0a0a12 0%, #050507 100%);
+  position: relative;
+}
+
+.hero-content {
+  max-width: 850px;               
+  display: flex;
+  flex-direction: column;         /* Empilha os textos */
+  align-items: center;            /* Centraliza botões e blocos */
+  gap: 24px;                      
+}
+
+/* Linha de produtos (Texto menor no topo) */
+.product-line {
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #00f2fe;                 
+}
+
+/* Chamada Principal (O maior título da página) */
+.main-title {
+  font-size: 3.2rem;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #ffffff;
+  letter-spacing: -1px;
+}
+
+/* Informações de Lançamento / Localização */
+.product-meta {
+  display: flex;
+  gap: 25px;                      
+  margin-top: 5px;
+}
+
+.meta-item {
+  color: #8e8e93;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+/* Botão de Ação do Produto */
+.btn-hero {
+  display: inline-block;
+  background: #00f2fe;            
+  color: #050507;
+  padding: 14px 36px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+  box-shadow: 0 0 20px rgba(0, 242, 254, 0.25);
+}
+
+.btn-hero:hover {
+  background: #ffffff;
+  color: #050507;
+  box-shadow: 0 0 35px rgba(255, 255, 255, 0.4);
+  transform: translateY(-3px);    
+}
+
+/* --- RESPONSIVIDADE (CELULAR) --- */
+@media (max-width: 768px) {
+  .nav-links, .cta-header {
+    display: none;                
+  }
+  
+  .main-title {
+    font-size: 2.2rem;            
+  }
+  
+  .product-meta {
+    flex-direction: column;       
+    gap: 10px;
+  }
+}
