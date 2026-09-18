@@ -1,21 +1,32 @@
-# Identidade Visual do Projeto
+## 🎨 Padrão Visual (Style Guide) — INOVEX
 
-Este documento detalha as escolhas de design, cores, fontes e imagens utilizadas na interface do nosso site de vendas de robotica.
+Identidade visual moderna, futurista e minimalista desenvolvida para a plataforma de Inteligência Artificial e Robótica.
 
-## 🎨 Paleta de Cores
-* **Cor Principal (Azul):** `#00f2fe` (Utilizada para links, botões principais, bordas de destaque e efeitos hover)
-* **Cor Secundária (Fundo dos Cards):** `#0d0e15` (Um grafite escuro tecnológico usado na base dos componentes)
-* **Cor de Fundo da Página:** `#050508` (Um tom quase preto para criar o ambiente Dark Mode futurista)
-* **Cor dos Textos:** `#ffffff` (Para títulos principais) e `#a0a5c0` (Azul acinzentado para descrições, garantindo boa leitura no escuro)
+### 🌑 Paleta de Cores
 
-## ✍️ Tipografia
-* **Títulos:** `Orbitron` (Uma fonte com estilo geométrico e cibernético, ideal para temas de ficção científica)
-* **Textos/Corpo:** `Rajdhani` (Uma fonte condensada e moderna, excelente para especificações técnicas e leitura rápida)
+| Cor | Hexadecimal | Aplicação |
+| :--- | :--- | :--- |
+| **Preto Espacial** | `#050507` | Fundo principal da aplicação e seções escuras. |
+| **Azul Ciano** | `#00f2fe` | Elementos de destaque, links ativos, hovers e botões principais (CTA). |
+| **Branco Puro** | `#ffffff` | Títulos principais (`h1`, `h2`) e textos de alta prioridade. |
+| **Cinza Mutado** | `#8e8e93` | Textos secundários, links inativos e subtextos de menor relevância. |
 
-## 🖼️ Imagens
-Informações sobre os arquivos visuais utilizados no projeto:
+### 🔤 Tipografia
 
-* **Imagem do Card de Produto:**
-  * **Onde é utilizada:** No topo do card expansível do robô.
-  * **Descrição:** Foto demonstrativa de um robô tecnológico ou braço mecânico inteligente.
-  * **Fonte:** Unsplash (Banco de imagens gratuito) - Link utilizado temporariamente: `https://unsplash.com`
+* **Fonte Principal:** `Space Grotesk` (Fonte geométrica sem serifa com visual tecnológico).
+* **Fontes de Backup:** `-apple-system`, `BlinkMacSystemFont`, `Segoe UI`, `Roboto`, `sans-serif`.
+
+### 📐 Estrutura de Componentes
+
+#### 1. Header (Navegação)
+* **Comportamento:** Fixo no topo (`position: sticky`) com efeito de vidro fosco (`backdrop-filter: blur(12px)`).
+* **Transparência:** Fundo preto com `80%` de opacidade.
+* **Margens:** Padding interno de `25px` vertical e `5%` horizontal.
+
+#### 2. Botões e Ações
+* **Botão de Destaque (Hero):** Fundo Ciano, texto escuro e efeito de brilho externo (`box-shadow`) que expande e eleva o botão (`translateY(-3px)`) ao passar o mouse.
+* **Botão Secundário (Header):** Fundo transparente com borda fina branca, tornando-se Ciano no hover.
+
+#### 3. Efeitos Visuais (Vibe Futurista)
+* **Gradientes:** Uso de `radial-gradient` centralizado para simular uma iluminação de estúdio no fundo do banner.
+* **Bordas:** Linhas extremamente sutis (`rgba(255, 255, 255, 0.05)`) para separar seções sem poluir o visual escuro.
