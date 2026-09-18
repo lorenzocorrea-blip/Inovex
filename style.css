@@ -33,7 +33,17 @@ body {
   font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
+}
+
+/* Garante que o link da logo não fique azul ou sublinhado */
+.logo a {
   color: #ffffff;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.logo a:hover {
+  opacity: 0.9;
 }
 
 .logo span {
@@ -55,8 +65,9 @@ body {
   transition: color 0.3s ease;
 }
 
+/* Muda para o ciano tecnológico ao passar o mouse */
 .nav-links a:hover {
-  color: #ffffff;
+  color: #00f2fe;
 }
 
 .cta-header {
@@ -72,9 +83,9 @@ body {
 }
 
 .cta-header:hover {
-  background: #ffffff;
+  background: #00f2fe;
   color: #050507;
-  border-color: #ffffff;
+  border-color: #00f2fe;
 }
 
 /* --- BANNER DO PRODUTO (CENTRALIZADO) --- */
@@ -94,7 +105,7 @@ body {
   max-width: 850px;               
   display: flex;
   flex-direction: column;         /* Empilha os textos */
-  align-items: center;            /* Centraliza botões e blocos */
+  align-items: center;            /* Centraliza botões e blocs */
   gap: 24px;                      
 }
 
