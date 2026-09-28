@@ -1,72 +1,128 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Produtos - Inovex</title>
-</head>
-<body>
+  </head>
+  <body>
+    <!-- Cabeçalho, especifica a parte e coloca os links como ancora para as outras paginas. -->
+    <header class="header">
+      <div class="logo">Inovex<span>.</span></div>
+      <ul class="nav-links">
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="sobre.html">Sobre nós</a></li>
+        <li><a href="index.html">Início</a></li>
+      </ul>
+    </header>
 
-  <!-- ===================== FOOTER ===================== -->
-  <footer class="footer">
-    <div class="footer-glow"></div>
+    <!-- conteudo principal dos produtos -->
+    <main class="pagina-main">
+      <section class="bloco-main">
+        <p class="tag-main">Produtos</p>
+        <h1>Tecnologias em destaque</h1>
 
-    <div class="footer-container">
+        <p class="texto-main">
+          Alguns exemplos de soluções que podem ser apresentadas no evento.
+        </p>
 
-      <!-- Sobre / Informações adicionais -->
-      <div class="footer-col">
-        <div class="footer-logo">Inovex<span>.</span></div>
-        <p> Ambiente interativo projetado para desmistificar a robótica avançada e a Inteligência Artificial.</p>
-      </div>
+        <!-- lista simples dos produtos -->
+        <div class="cards-main">
+          <article class="card-main produto-card">
+            <h2>Humanoide Educacional</h2>
+            <p>
+              Modelo pensado para demonstrações, estudos e atividades de
+              programação.
+            </p>
+            <span>Robótica e Educação</span>
+          </article>
 
-      <!-- Navegação -->
-      <div class="footer-col">
-        <h4>Navegação</h4>
-        <ul>
-          <li><a href="index.html">Início</a></li>
-          <li><a href="produtos.html">Produtos</a></li>
-          <li><a href="sobre.html">Sobre nós</a></li>
-          <li><a href="contato.html">Contato</a></li>
-        </ul>
-      </div>
+          <article class="card-main produto-card">
+            <h2>Assistente Inteligente</h2>
+            <p>
+              Projeto que usa inteligência artificial para responder perguntas e
+              ajudar usuários.
+            </p>
+            <span>Inteligência Artificial</span>
+          </article>
 
-      <!-- Contato -->
-      <div class="footer-col">
-        <h4>Contato</h4>
-        <ul>
-          <li>contato@inovex.com</li>
-          <li>+55 (49) 00000-0000</li>
-          <li>Seg a Sex, 8h às 18h</li>
-        </ul>
-      </div>
+          <article class="card-main produto-card">
+            <h2>Humanoide Industrial</h2>
+            <p>
+              Conceito voltado para tarefas repetitivas e apoio em ambientes de
+              trabalho.
+            </p>
+            <span>Automação</span>
+          </article>
+        </div>
+      </section>
+    </main>
 
-      <!-- Localização -->
-      <div class="footer-col">
-        <h4>Localização</h4>
-        <ul>
-          <li>Lages, Santa Catarina - Brasil</li>
-        </ul>
-      </div>
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+      <div class="footer-glow"></div>
 
-      <!-- Redes sociais -->
-      <div class="footer-col">
-        <h4>Redes sociais</h4>
-        <div class="footer-social">
-          <a href="https://www.instagram.com/accounts/login/?next=%2Freels%2FDXRdkYuNMy4%2F&source=desktop_nav" aria-label="Instagram">IG</a>
-          <a href="https://br.linkedin.com/" aria-label="LinkedIn">In</a>
-          <a href="https://github.com/?locale=pt-br" aria-label="GitHub">GH</a>
+      <div class="footer-container">
+        <!-- Sobre / Informações adicionais -->
+        <div class="footer-col">
+          <div class="footer-logo">Inovex<span>.</span></div>
+          <p>
+            Ambiente interativo projetado para desmistificar a robótica avançada
+            e a Inteligência Artificial.
+          </p>
+        </div>
+
+        <!-- Navegação -->
+        <div class="footer-col">
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="sobre.html">Sobre nós</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+
+        <!-- Contato -->
+        <div class="footer-col">
+          <h4>Contato</h4>
+          <ul>
+            <li>contato@inovex.com</li>
+            <li>+55 (49) 00000-0000</li>
+            <li>Seg a Sex, 8h às 18h</li>
+          </ul>
+        </div>
+
+        <!-- Localização -->
+        <div class="footer-col">
+          <h4>Localização</h4>
+          <ul>
+            <li>Lages, Santa Catarina - Brasil</li>
+          </ul>
+        </div>
+
+        <!-- Redes sociais -->
+        <div class="footer-col">
+          <h4>Redes sociais</h4>
+          <div class="footer-social">
+            <a
+              href="https://www.instagram.com/accounts/login/?next=%2Freels%2FDXRdkYuNMy4%2F&source=desktop_nav"
+              aria-label="Instagram"
+              >IG</a
+            >
+            <a href="https://br.linkedin.com/" aria-label="LinkedIn">In</a>
+            <a href="https://github.com/?locale=pt-br" aria-label="GitHub"
+              >GH</a
+            >
+          </div>
         </div>
       </div>
 
-    </div>
-
-
-    <div class="footer-bottom">
-      <p>&copy; 2026 Inovex. Todos os direitos reservados.</p>
-    </div>
-  </footer>
-
-
-</body>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Inovex. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+  </body>
 </html>
