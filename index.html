@@ -1,102 +1,131 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Inovex — OS HUMANOIDES</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inovex — Os Humanoides</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Cabeçalho, especifica a parte e coloca os links como ancora para as outras paginas. -->
+    <header class="header">
+      <div class="logo">Inovex<span>.</span></div>
+      <ul class="nav-links">
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="sobre.html">Sobre nós</a></li>
+        <li><a href="index.html">Início</a></li>
+      </ul>
+    </header>
 
-  <!-- Cabeçalho, especifica a parte e coloca os links como ancora para as outras paginas. -->
-  <header class="header">
-    <div class="logo">Inovex<span>.</span></div>
-    <ul class="nav-links">
-      <li><a href="contato.html">Contato</a></li>
-      <li><a href="produtos.html">Produtos</a></li>
-      <li><a href="sobre.html">Sobre nós</a></li>
-    </ul>
-    <button class="cta-header">Contato</button>
-  </header>
-  
-  <!-- Banner princripal, class especifica a parte e h1 é o titulo da pagina grande-->
-  <section class="hero-banner">
-    <div class="hero-content">
-      <!-- Nome do Evento -->
-      <p class="event-name">Inovex — Os Humanoides</p>
-      
-      <!-- Chamada Principal -->
-      <h1 class="main-title">A Próxima Fronteira da Inteligência Artificial e Robótica</h1>
-      
-      <!-- class e div especificando a parte e span isolando o texto. -->
-      <div class="event-info">
-        <span class="info-item">🗓️ 19 de Setembro de 2026</span>
-      </div>
-      
-      <!-- Botão de Ação do Banner (Opcional, mas excelente para conversão) -->
-      <a href="#inscricao" class="btn-hero">Ver Detalhes</a>
-    </div>
-  </section>
+    <!-- parte principal da pagina -->
+    <main class="inicio-main">
+      <section class="inicio-conteudo">
+        <p class="tag-main">Inovex — Os Humanoides</p>
 
-  <!-- ===================== FOOTER ===================== -->
-  <footer class="footer">
-    <div class="footer-glow"></div>
+        <h1>A próxima fronteira da inteligência artificial e robótica</h1>
 
-    <div class="footer-container">
+        <p class="texto-main">
+          Um evento para conhecer de perto novas tecnologias, robôs humanoides e
+          ideias que estão mudando a forma como usamos a inteligência
+          artificial.
+        </p>
 
-      <!-- Sobre / Informações adicionais -->
-      <div class="footer-col">
-        <div class="footer-logo">Inovex<span>.</span></div>
-        <p> Ambiente interativo projetado para desmistificar a robótica avançada e a Inteligência Artificial. </p>
-      </div>
+        <!-- informacoes basicas do evento -->
+        <div class="info-main">
+          <span>19 de setembro de 2026</span>
+          <span>Lages - SC</span>
+        </div>
 
-      <!-- Navegação -->
-      <div class="footer-col">
-        <h4>Navegação</h4>
-        <ul>
-          <li><a href="index.html">Início</a></li>
-          <li><a href="produtos.html">Produtos</a></li>
-          <li><a href="sobre.html">Sobre nós</a></li>
-          <li><a href="contato.html">Contato</a></li>
-        </ul>
-      </div>
+        <a class="botao-main" href="produtos.html">Ver Projetos</a>
+      </section>
 
-      <!-- Contato -->
-      <div class="footer-col">
-        <h4>Contato</h4>
-        <ul>
-          <li>contato@inovex.com</li>
-          <li>+55 (49) 00000-0000</li>
-          <li>Seg a Sex, 8h às 18h</li>
-        </ul>
-      </div>
+      <!-- alguns assuntos que vao aparecer no evento -->
+      <section class="destaques-main">
+        <article class="card-main">
+          <h2>Robótica</h2>
+          <p>Demonstrações de robôs e tecnologias usadas em humanoides.</p>
+        </article>
 
-      <!-- Localização -->
-      <div class="footer-col">
-        <h4>Localização</h4>
-        <ul>
-          <li>Lages, Santa Catarina - Brasil</li>
-        </ul>
-      </div>
+        <article class="card-main">
+          <h2>Inteligência Artificial</h2>
+          <p>
+            Exemplos simples de como a IA pode ajudar máquinas a tomar decisões.
+          </p>
+        </article>
 
-      <!-- Redes sociais -->
-      <div class="footer-col">
-        <h4>Redes sociais</h4>
-        <div class="footer-social">
-          <a href="https://www.instagram.com/accounts/login/?next=%2Freels%2FDXRdkYuNMy4%2F&source=desktop_nav" aria-label="Instagram">IG</a>
-          <a href="https://br.linkedin.com/" aria-label="LinkedIn">In</a>
-          <a href="https://github.com/?locale=pt-br" aria-label="GitHub">GH</a>
+        <article class="card-main">
+          <h2>Interação</h2>
+          <p>
+            Um espaço para conhecer os projetos e entender como eles funcionam.
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+      <div class="footer-glow"></div>
+
+      <div class="footer-container">
+        <!-- Sobre / Informações adicionais -->
+        <div class="footer-col">
+          <div class="footer-logo">Inovex<span>.</span></div>
+          <p>
+            Ambiente interativo projetado para desmistificar a robótica avançada
+            e a Inteligência Artificial.
+          </p>
+        </div>
+
+        <!-- Navegação -->
+        <div class="footer-col">
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="sobre.html">Sobre nós</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+
+        <!-- Contato -->
+        <div class="footer-col">
+          <h4>Contato</h4>
+          <ul>
+            <li>contato@inovex.com</li>
+            <li>+55 (49) 00000-0000</li>
+            <li>Seg a Sex, 8h às 18h</li>
+          </ul>
+        </div>
+
+        <!-- Localização -->
+        <div class="footer-col">
+          <h4>Localização</h4>
+          <ul>
+            <li>Lages, Santa Catarina - Brasil</li>
+          </ul>
+        </div>
+
+        <!-- Redes sociais -->
+        <div class="footer-col">
+          <h4>Redes sociais</h4>
+          <div class="footer-social">
+            <a
+              href="https://www.instagram.com/accounts/login/?next=%2Freels%2FDXRdkYuNMy4%2F&source=desktop_nav"
+              aria-label="Instagram"
+              >IG</a
+            >
+            <a href="https://br.linkedin.com/" aria-label="LinkedIn">In</a>
+            <a href="https://github.com/?locale=pt-br" aria-label="GitHub"
+              >GH</a
+            >
+          </div>
         </div>
       </div>
 
-    </div>
-
-    
-
-    <div class="footer-bottom">
-      <p>&copy; 2026 Inovex. Todos os direitos reservados.</p>
-    </div>
-  </footer>
-
-</body>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Inovex. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+  </body>
 </html>

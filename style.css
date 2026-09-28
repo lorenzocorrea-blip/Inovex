@@ -6,7 +6,13 @@
 }
 
 body {
-  font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-family:
+    "Space Grotesk",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    sans-serif;
   background-color: #050507;
   color: #ffffff;
   overflow-x: hidden;
@@ -28,7 +34,7 @@ body {
 }
 
 .logo {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-size: 1.3rem;
   font-weight: 700;
   letter-spacing: 2px;
@@ -65,7 +71,7 @@ body {
   color: #ffffff;
   padding: 8px 18px;
   border-radius: 4px;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-size: 0.85rem;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -77,94 +83,179 @@ body {
   border-color: #ffffff;
 }
 
-/* --- BANNER DO PRODUTO (CENTRALIZADO) --- */
-.hero-banner {
-  width: 100%;
-  min-height: calc(100vh - 85px); 
-  display: flex;
-  justify-content: center;        /* Centraliza na horizontal */
-  align-items: center;            /* Centraliza na vertical */
-  text-align: center;             /* Centraliza as linhas de texto */
-  padding: 40px 5%;
-  background: radial-gradient(circle at center, #0a0a12 0%, #050507 100%);
-  position: relative;
+/* --- main --- */
+.inicio-main,
+.pagina-main {
+  min-height: 75vh;
+  background-color: #08080c;
+  padding: 70px 8%;
 }
 
-.hero-content {
-  max-width: 850px;               
-  display: flex;
-  flex-direction: column;         /* Empilha os textos */
-  align-items: center;            /* Centraliza botões e blocos */
-  gap: 24px;                      
+.inicio-conteudo,
+.bloco-main {
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-/* Linha de produtos (Texto menor no topo) */
-.product-line {
+.inicio-conteudo {
+  text-align: center;
+}
+
+.tag-main {
+  color: #00f2fe;
   font-size: 0.9rem;
-  font-weight: 600;
+  font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: 4px;
-  color: #00f2fe;                 
+  letter-spacing: 2px;
+  margin-bottom: 15px;
 }
 
-/* Chamada Principal (O maior título da página) */
-.main-title {
-  font-size: 3.2rem;
-  font-weight: 800;
-  line-height: 1.2;
-  color: #ffffff;
-  letter-spacing: -1px;
+.inicio-main h1,
+.pagina-main h1 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
 }
 
-/* Informações de Lançamento / Localização */
-.product-meta {
+.texto-main {
+  max-width: 700px;
+  color: #b5b5bd;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.inicio-conteudo .texto-main {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.info-main {
   display: flex;
-  gap: 25px;                      
-  margin-top: 5px;
+  justify-content: center;
+  gap: 25px;
+  color: #b5b5bd;
+  margin-bottom: 30px;
 }
 
-.meta-item {
-  color: #8e8e93;
-  font-size: 1rem;
-  font-weight: 500;
-  letter-spacing: 0.5px;
-}
-
-/* Botão de Ação do Produto */
-.btn-hero {
+.botao-main {
   display: inline-block;
-  background: #00f2fe;            
+  background-color: #00f2fe;
   color: #050507;
-  padding: 14px 36px;
+  border: none;
   border-radius: 4px;
+  padding: 12px 24px;
   text-decoration: none;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  transition: all 0.3s ease;
-  margin-top: 10px;
-  box-shadow: 0 0 20px rgba(0, 242, 254, 0.25);
+  font: inherit;
+  font-weight: bold;
+  cursor: pointer;
 }
 
-.btn-hero:hover {
-  background: #ffffff;
-  color: #050507;
-  box-shadow: 0 0 35px rgba(255, 255, 255, 0.4);
-  transform: translateY(-3px);    
+.botao-main:hover {
+  background-color: #ffffff;
 }
 
-/* --- RESPONSIVIDADE (CELULAR) --- */
+/* cards usados nas paginas */
+.destaques-main,
+.cards-main {
+  max-width: 1000px;
+  margin: 55px auto 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card-main {
+  background-color: #111117;
+  border: 1px solid #24242d;
+  border-radius: 6px;
+  padding: 24px;
+}
+
+.card-main h2 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+.card-main p {
+  color: #a0a5c0;
+  line-height: 1.5;
+}
+
+.produto-card span {
+  display: inline-block;
+  color: #00f2fe;
+  font-size: 0.8rem;
+  margin-top: 18px;
+}
+
+/* pagina de contato */
+.contato-main {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+.contato-info p {
+  color: #b5b5bd;
+  margin-bottom: 10px;
+}
+
+.formulario-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario-main label {
+  margin-bottom: 6px;
+  color: #d7d7dc;
+}
+
+.formulario-main input,
+.formulario-main textarea {
+  width: 100%;
+  background-color: #111117;
+  color: #ffffff;
+  border: 1px solid #2c2c35;
+  border-radius: 4px;
+  padding: 12px;
+  margin-bottom: 18px;
+  font: inherit;
+}
+
+.formulario-main textarea {
+  resize: vertical;
+}
+
+.formulario-main .botao-main {
+  align-self: flex-start;
+}
+
+/* ajuste para telas menores */
 @media (max-width: 768px) {
-  .nav-links, .cta-header {
-    display: none;                
+  .inicio-main,
+  .pagina-main {
+    padding: 50px 6%;
   }
-  
-  .main-title {
-    font-size: 2.2rem;            
+
+  .inicio-main h1,
+  .pagina-main h1 {
+    font-size: 2rem;
   }
-  
-  .product-meta {
-    flex-direction: column;       
-    gap: 10px;
+
+  .info-main {
+    flex-direction: column;
+  }
+
+  .destaques-main,
+  .cards-main,
+  .contato-main {
+    grid-template-columns: 1fr;
+  }
+
+  .info-main {
+    gap: 8px;
   }
 }
 
@@ -207,7 +298,7 @@ body {
 }
 
 .footer-logo {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-size: 1.3rem;
   font-weight: 700;
   letter-spacing: 2px;
@@ -221,14 +312,14 @@ body {
 }
 
 .footer-col p {
-  font-family: 'Rajdhani', sans-serif;
+  font-family: "Rajdhani", sans-serif;
   font-size: 0.95rem;
   line-height: 1.6;
   color: #a0a5c0;
 }
 
 .footer-col h4 {
-  font-family: 'Orbitron', sans-serif;
+  font-family: "Orbitron", sans-serif;
   font-size: 0.85rem;
   letter-spacing: 1.5px;
   text-transform: uppercase;
@@ -242,7 +333,7 @@ body {
 }
 
 .footer-col ul li {
-  font-family: 'Rajdhani', sans-serif;
+  font-family: "Rajdhani", sans-serif;
   font-size: 0.95rem;
   color: #a0a5c0;
   margin-bottom: 10px;
@@ -273,7 +364,7 @@ body {
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.15);
   color: #a0a5c0;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-size: 0.75rem;
   text-decoration: none;
   transition: all 0.3s ease;
@@ -296,7 +387,7 @@ body {
 
 .sponsors-label {
   display: block;
-  font-family: 'Orbitron', sans-serif;
+  font-family: "Orbitron", sans-serif;
   font-size: 0.75rem;
   letter-spacing: 1.5px;
   text-transform: uppercase;
@@ -316,7 +407,9 @@ body {
   object-fit: contain;
   filter: grayscale(100%) brightness(2);
   opacity: 0.6;
-  transition: opacity 0.3s ease, filter 0.3s ease;
+  transition:
+    opacity 0.3s ease,
+    filter 0.3s ease;
 }
 
 .sponsors-logos img:hover {
@@ -332,7 +425,7 @@ body {
 }
 
 .footer-bottom p {
-  font-family: 'Rajdhani', sans-serif;
+  font-family: "Rajdhani", sans-serif;
   font-size: 0.85rem;
   color: #8e8e93;
 }
